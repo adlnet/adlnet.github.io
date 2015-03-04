@@ -20,223 +20,232 @@
       <h1 class="text-primary"><i class="fa fa-archive"></i> adlnet.github.io</h1>
     </div>
 
-    <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-            <div class="box">
-                <div class="box-icon">
-                    <span class="fa fa-4x fa-cubes"></span>
-                </div>
-                <div class="info">
-                    <h4 class="text-center">ADL LRS</h4>
-                    <div class="panel-google-plus-tags">
-                        <ul>
-                            <li>#xAPI</li>
-                            <li>#LRS</li>
-                        </ul>
-                    </div>
-                    <p>ADL’s Open Source Learning Record Store (LRS) is used to store learning data collected with the xAPI. It is a reference implementation of the system described in the https://github.com/adlnet/xAPI-Spec repository. Use this project if you are looking to setup an LRS for testing purposes. You may also use our publicly hosted LRS at https://lrs.adlnet.gov for testing purposes.</p>
-                    <a href="" class="btn"><i class="fa fa-external-link"></i> Live Demo</a>
-                    <a href="" class="btn readme"><i class="fa fa-file-text"></i> README</a>
-                    <a href="" class="btn github"><i class="fa fa-github"></i> Github</a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-            <div class="box">
-                <div class="box-icon">
-                    <span class="fa fa-4x fa-flask"></span>
-                </div>
-                <div class="info">
-                    <h4 class="text-center">xAPI Lab</h4>
-                    <div class="panel-google-plus-tags">
-                        <ul>
-                            <li>#xAPI</li>
-                            <li>#LRSTools</li>
-                            <li>#APTools</li>
-                        </ul>
-                    </div>
-                    <p>Assisting in developing xAPI statements and communicating with a Learning Record Store (LRS).</p>
-                    <a href="" class="btn"><i class="fa fa-external-link"></i> Live Demo</a>
-                    <a href="" class="btn github"><i class="fa fa-github"></i> Github</a>
-                </div>
-            </div>
-        </div>
-    </div>
+    <ul id="filter" class="pagination">
+      <li class="active"><a href="#" data-group="">all</a></li>
+      <li><a href="#" data-group="xapi">xapi</a></li>
+      <li><a href="#" data-group="lrs">lrs</a></li>
+      <li><a href="#" data-group="lrstools">lrstools</a></li>
+      <li><a href="#" data-group="aptools">aptools</a></li>
+      <li><a href="#" data-group="reporting">reporting</a></li>
+      <li><a href="#" data-group="scorm">scorm</a></li>
+      <li><a href="#" data-group="profile">profile</a></li>
+      <li><a href="#" data-group="virtualworlds">virtualworlds</a></li>
+    </ul>
 
-    <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-            <div class="box">
-                <div class="box-icon">
-                    <span class="fa fa-4x fa-list"></span>
-                </div>
-                <div class="info">
-                    <h4 class="text-center">xAPI Statement Viewer</h4>
-                    <div class="panel-google-plus-tags">
-                        <ul>
-                            <li>#xAPI</li>
-                            <li>#LRSTools</li>
-                        </ul>
-                    </div>
-                    <p>A datatables and bootstrap based xAPI statement viewer for easier reading</p>
-                    <a href="" class="btn"><i class="fa fa-external-link"></i> Live Demo</a>
-                    <a href="" class="btn github"><i class="fa fa-github"></i> Github</a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-            <div class="box">
-                <div class="box-icon">
-                    <span class="fa fa-4x fa-paper-plane-o"></span>
-                </div>
-                <div class="info">
-                    <h4 class="text-center">xAPI Wrapper</h4>
-                    <p>This JavaScript wrapper drastically simplifies communication to a Learning Record Store (LRS). All of our web-based xAPI samples use this file to abstract their communication to the LRS. Use this file for quick prototyping or proofs of concept in a web environment.</p>
-                    <div class="panel-google-plus-tags">
-                        <ul>
-                            <li>#xAPI</li>
-                            <li>#APTools</li>
-                        </ul>
-                    </div>
-                    <a href="" class="btn"><i class="fa fa-external-link"></i> Live Demo</a>
-                    <a href="" class="btn readme"><i class="fa fa-file-text"></i> README</a>
-                    <a href="" class="btn github"><i class="fa fa-github"></i> Github</a>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div id="grid">
 
-    <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-            <div class="box">
-                <div class="box-icon">
-                    <span class="fa fa-4x fa-bar-chart"></span>
-                </div>
-                <div class="info">
-                    <h4 class="text-center">xAPI Dashboard</h4><div class="panel-google-plus-tags">
-                        <ul>
-                            <li>#xAPI</li>
-                            <li>#LRSTools</li>
-                            <li>#Reporting</li>
-                        </ul>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 item" data-groups='["xapi","lrs"]'>
+                <div class="box">
+                    <div class="box-icon">
+                        <span class="fa fa-4x fa-cubes"></span>
                     </div>
-                    <p>Provides a quick and easy way to generate graphs from your xAPI data, as well as a powerful query language to manipulate it.</p>
-                    <a href="" class="btn"><i class="fa fa-external-link"></i> Live Demo</a>
-                    <a href="" class="btn readme"><i class="fa fa-file-text"></i> README</a>
-                    <a href="" class="btn github"><i class="fa fa-github"></i> Github</a>
+                    <div class="info">
+                        <h4 class="text-center">ADL LRS</h4>
+                        <div class="panel-google-plus-tags">
+                            <ul>
+                                <li>#xAPI</li>
+                                <li>#LRS</li>
+                            </ul>
+                        </div>
+                        <p>ADL’s Open Source Learning Record Store (LRS) is used to store learning data collected with the xAPI. It is a reference implementation of the system described in the https://github.com/adlnet/xAPI-Spec repository. Use this project if you are looking to setup an LRS for testing purposes. You may also use our publicly hosted LRS at https://lrs.adlnet.gov for testing purposes.</p>
+                        <a href="" class="btn"><i class="fa fa-external-link"></i> Live Demo</a>
+                        <a href="" class="btn readme"><i class="fa fa-file-text"></i> README</a>
+                        <a href="" class="btn github"><i class="fa fa-github"></i> Github</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-            <div class="box">
-                <div class="box-icon">
-                    <span class="fa fa-4x fa-puzzle-piece"></span>
-                </div>
-                <div class="info">
-                    <h4 class="text-center">xAPI API Client Examples</h4>
-                    <div class="panel-google-plus-tags">
-                        <ul>
-                            <li>#xAPI</li>
-                            <li>#APTools</li>
-                        </ul>
+            
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 item" data-groups='["xapi","lrstools"]'>
+                <div class="box">
+                    <div class="box-icon">
+                        <span class="fa fa-4x fa-flask"></span>
                     </div>
-                    <p>These are client examples to help you learn and get started using the new API. These were created under the original Broad Agency Announcement (BAA)effort and have been updated to use the latest version of the xAPI. The samples include a Statement viewer, a Reporting example, and a Tetris game example. Use these examples to test out connectivity to a Learning Record Store or write learning content that is compatible with using the xAPI.</p>
-                    <a href="" class="btn"><i class="fa fa-external-link"></i> Live Demo</a>
-                    <a href="" class="btn readme"><i class="fa fa-file-text"></i> README</a>
-                    <a href="" class="btn github"><i class="fa fa-github"></i> Github</a>
+                    <div class="info">
+                        <h4 class="text-center">xAPI Lab</h4>
+                        <div class="panel-google-plus-tags">
+                            <ul>
+                                <li>#xAPI</li>
+                                <li>#LRSTools</li>
+                                <li>#APTools</li>
+                            </ul>
+                        </div>
+                        <p>Assisting in developing xAPI statements and communicating with a Learning Record Store (LRS).</p>
+                        <a href="" class="btn"><i class="fa fa-external-link"></i> Live Demo</a>
+                        <a href="" class="btn github"><i class="fa fa-github"></i> Github</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
 
-    <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-            <div class="box">
-                <div class="box-icon">
-                    <span class="fa fa-4x fa-mobile"></span>
-                </div>
-                <div class="info">
-                    <h4 class="text-center">xAPI jQuery Mobile</h4>
-                    <div class="panel-google-plus-tags">
-                        <ul>
-                            <li>#xAPI</li>
-                            <li>#APTools</li>
-                        </ul>
-                    </div>
-                    <p>Integration of xAPI using jQuery Mobile with course examples and templates to get you started.</p>
-                    <a href="" class="btn"><i class="fa fa-external-link"></i> Live Demo</a>
-                    <a href="" class="btn readme"><i class="fa fa-file-text"></i> README</a>
-                    <a href="" class="btn github"><i class="fa fa-github"></i> Github</a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-            <div class="box">
-                <div class="box-icon">
-                    <span class="fa fa-4x fa-gift"></span>
-                </div>
-                <div class="info">
-                    <h4 class="text-center">SCORM to xAPI Wrapper</h4>
-                    <div class="panel-google-plus-tags">
-                        <ul>
-                            <li>#xAPI</li>
-                            <li>#SCORM</li>
-                            <li>#APTools</li>
-                        </ul>
-                    </div>
-                    <p>APIWrapper.js file commonly used with SCORM with xAPI calls embedded</p>
-                    <a href="" class="btn readme"><i class="fa fa-file-text"></i> README</a>
-                    <a href="" class="btn github"><i class="fa fa-github"></i> Github</a>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-            <div class="box">
-                <div class="box-icon">
-                    <span class="fa fa-4x fa-cog"></span>
-                </div>
-                <div class="info">
-                    <h4 class="text-center">xAPI SCORM Profile</h4>
-                    <div class="panel-google-plus-tags">
-                        <ul>
-                            <li>#xAPI</li>
-                            <li>#SCORM</li>
-                            <li>#Profile</li>
-                        </ul>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 item" data-groups='["xapi","lrstools"]'>
+                <div class="box">
+                    <div class="box-icon">
+                        <span class="fa fa-4x fa-list"></span>
                     </div>
-                    <p>Document describing how to report SCORM data to the Experience API.</p>
-                    <a href="" class="btn"><i class="fa fa-external-link"></i> Live Demo</a>
-                    <a href="" class="btn readme"><i class="fa fa-file-text"></i> README</a>
-                    <a href="" class="btn github"><i class="fa fa-github"></i> Github</a>
+                    <div class="info">
+                        <h4 class="text-center">xAPI Statement Viewer</h4>
+                        <div class="panel-google-plus-tags">
+                            <ul>
+                                <li>#xAPI</li>
+                                <li>#LRSTools</li>
+                            </ul>
+                        </div>
+                        <p>A datatables and bootstrap based xAPI statement viewer for easier reading</p>
+                        <a href="" class="btn"><i class="fa fa-external-link"></i> Live Demo</a>
+                        <a href="" class="btn github"><i class="fa fa-github"></i> Github</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-            <div class="box">
-                <div class="box-icon">
-                    <span class="fa fa-4x fa-cube"></span>
-                </div>
-                <div class="info">
-                    <h4 class="text-center">Sandbox</h4>
-                    <div class="panel-google-plus-tags">
-                        <ul>
-                            <li>#VirtualWorlds</li>
-                        </ul>
+            
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 item" data-groups='["xapi","aptools"]'>
+                <div class="box">
+                    <div class="box-icon">
+                        <span class="fa fa-4x fa-paper-plane-o"></span>
                     </div>
-                    <p>The ADL Sandbox is a persistent virtual environment that runs in a web browser.</p>
-                    <a href="" class="btn"><i class="fa fa-external-link"></i> Live Demo</a>
-                    <a href="" class="btn readme"><i class="fa fa-file-text"></i> README</a>
-                    <a href="" class="btn github"><i class="fa fa-github"></i> Github</a>
+                    <div class="info">
+                        <h4 class="text-center">xAPI Wrapper</h4>
+                        <p>This JavaScript wrapper drastically simplifies communication to a Learning Record Store (LRS). All of our web-based xAPI samples use this file to abstract their communication to the LRS. Use this file for quick prototyping or proofs of concept in a web environment.</p>
+                        <div class="panel-google-plus-tags">
+                            <ul>
+                                <li>#xAPI</li>
+                                <li>#APTools</li>
+                            </ul>
+                        </div>
+                        <a href="" class="btn"><i class="fa fa-external-link"></i> Live Demo</a>
+                        <a href="" class="btn readme"><i class="fa fa-file-text"></i> README</a>
+                        <a href="" class="btn github"><i class="fa fa-github"></i> Github</a>
+                    </div>
                 </div>
             </div>
-        </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 item" data-groups='["xapi","lrstools","reporting"]'>
+                <div class="box">
+                    <div class="box-icon">
+                        <span class="fa fa-4x fa-bar-chart"></span>
+                    </div>
+                    <div class="info">
+                        <h4 class="text-center">xAPI Dashboard</h4><div class="panel-google-plus-tags">
+                            <ul>
+                                <li>#xAPI</li>
+                                <li>#LRSTools</li>
+                                <li>#Reporting</li>
+                            </ul>
+                        </div>
+                        <p>Provides a quick and easy way to generate graphs from your xAPI data, as well as a powerful query language to manipulate it.</p>
+                        <a href="" class="btn"><i class="fa fa-external-link"></i> Live Demo</a>
+                        <a href="" class="btn readme"><i class="fa fa-file-text"></i> README</a>
+                        <a href="" class="btn github"><i class="fa fa-github"></i> Github</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 item" data-groups='["xapi","aptools"]'>
+                <div class="box">
+                    <div class="box-icon">
+                        <span class="fa fa-4x fa-puzzle-piece"></span>
+                    </div>
+                    <div class="info">
+                        <h4 class="text-center">xAPI API Client Examples</h4>
+                        <div class="panel-google-plus-tags">
+                            <ul>
+                                <li>#xAPI</li>
+                                <li>#APTools</li>
+                            </ul>
+                        </div>
+                        <p>These are client examples to help you learn and get started using the new API. These were created under the original Broad Agency Announcement (BAA)effort and have been updated to use the latest version of the xAPI. The samples include a Statement viewer, a Reporting example, and a Tetris game example. Use these examples to test out connectivity to a Learning Record Store or write learning content that is compatible with using the xAPI.</p>
+                        <a href="" class="btn"><i class="fa fa-external-link"></i> Live Demo</a>
+                        <a href="" class="btn readme"><i class="fa fa-file-text"></i> README</a>
+                        <a href="" class="btn github"><i class="fa fa-github"></i> Github</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 item" data-groups='["xapi","lrstools","mobile"]'>
+                <div class="box">
+                    <div class="box-icon">
+                        <span class="fa fa-4x fa-mobile"></span>
+                    </div>
+                    <div class="info">
+                        <h4 class="text-center">xAPI jQuery Mobile</h4>
+                        <div class="panel-google-plus-tags">
+                            <ul>
+                                <li>#xAPI</li>
+                                <li>#APTools</li>
+                                <li>#mobile</li>
+                            </ul>
+                        </div>
+                        <p>Integration of xAPI using jQuery Mobile with course examples and templates to get you started.</p>
+                        <a href="" class="btn"><i class="fa fa-external-link"></i> Live Demo</a>
+                        <a href="" class="btn readme"><i class="fa fa-file-text"></i> README</a>
+                        <a href="" class="btn github"><i class="fa fa-github"></i> Github</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 item" data-groups='["xapi","scorm","aptools"]'>
+                <div class="box">
+                    <div class="box-icon">
+                        <span class="fa fa-4x fa-gift"></span>
+                    </div>
+                    <div class="info">
+                        <h4 class="text-center">SCORM to xAPI Wrapper</h4>
+                        <div class="panel-google-plus-tags">
+                            <ul>
+                                <li>#xAPI</li>
+                                <li>#SCORM</li>
+                                <li>#APTools</li>
+                            </ul>
+                        </div>
+                        <p>APIWrapper.js file commonly used with SCORM with xAPI calls embedded</p>
+                        <a href="" class="btn readme"><i class="fa fa-file-text"></i> README</a>
+                        <a href="" class="btn github"><i class="fa fa-github"></i> Github</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 item" data-groups='["xapi","scorm","profile"]'>
+                <div class="box">
+                    <div class="box-icon">
+                        <span class="fa fa-4x fa-cog"></span>
+                    </div>
+                    <div class="info">
+                        <h4 class="text-center">xAPI SCORM Profile</h4>
+                        <div class="panel-google-plus-tags">
+                            <ul>
+                                <li>#xAPI</li>
+                                <li>#SCORM</li>
+                                <li>#Profile</li>
+                            </ul>
+                        </div>
+                        <p>Document describing how to report SCORM data to the Experience API.</p>
+                        <a href="" class="btn"><i class="fa fa-external-link"></i> Live Demo</a>
+                        <a href="" class="btn readme"><i class="fa fa-file-text"></i> README</a>
+                        <a href="" class="btn github"><i class="fa fa-github"></i> Github</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 item" data-groups='["virtualworlds"]'>
+                <div class="box">
+                    <div class="box-icon">
+                        <span class="fa fa-4x fa-cube"></span>
+                    </div>
+                    <div class="info">
+                        <h4 class="text-center">Sandbox</h4>
+                        <div class="panel-google-plus-tags">
+                            <ul>
+                                <li>#VirtualWorlds</li>
+                            </ul>
+                        </div>
+                        <p>The ADL Sandbox is a persistent virtual environment that runs in a web browser.</p>
+                        <a href="" class="btn"><i class="fa fa-external-link"></i> Live Demo</a>
+                        <a href="" class="btn readme"><i class="fa fa-file-text"></i> README</a>
+                        <a href="" class="btn github"><i class="fa fa-github"></i> Github</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 shuffle__sizer"></div>
     </div>
 
   </section>
@@ -244,6 +253,8 @@
   <!-- Placed at the end of the document so the pages load faster -->
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/jquery.shuffle.modernizr.min.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
 
 </body>
 </html>
