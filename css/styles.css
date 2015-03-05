@@ -1,7 +1,11 @@
 @import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
 
-body {padding-top:50px;}
+.page-header i {
+    color: #94D5F5;
+    text-shadow: 1px 1px 1px #ccc;
+}
 .box {
+    background-color: #fff;
     border-radius: 3px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     padding: 10px 25px;
@@ -10,7 +14,6 @@ body {padding-top:50px;}
     margin: 60px 0;
 }
 .box-icon {
-    background-color: #337AB7;
     border-radius: 50%;
     -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.4);
     -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.4);
@@ -21,6 +24,10 @@ body {padding-top:50px;}
     width: 100px;
     margin-top: -61px;
 }
+.box-icon-blue { background-color: #337AB7; }
+.box-icon-red { background-color: #DC381F; }
+.box-icon-green { background-color: #37B733; }
+.box-icon-purple { background-color: #B733B4; }
 .box-icon span {
     color: #fff;
     display: table-cell;
@@ -53,8 +60,7 @@ body {padding-top:50px;}
 .info > a.readme { background-color: #6EB9DB; }
 .info > a.readme:hover { background-color: #35A3DF; }
 .info > a.github { background-color: #4D4D4D; }
-.info > a.github:hover { background-color: #303030; }
-
+.info > a.github:hover { background-color: #282626; }
 
 .info > .panel-google-plus-tags {
     position: absolute;
