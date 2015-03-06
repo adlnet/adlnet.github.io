@@ -4,9 +4,9 @@ $(function() {
 
   var items = [
     {
-      tags: ["xAPI","LRS"],
+      tags: ["LRS","xAPI"],
       color: 'blue',
-      icon: 'fa-cubes',
+      icon: 'fa-university',
       title: 'ADL LRS',
       description: 'ADL’s Open Source Learning Record Store (LRS) is used to store learning data collected with the xAPI. It is a reference implementation of the system described in the <a href="https://github.com/adlnet/xAPI-Spec" target="_blank">xAPI Spec repository</a>. Use this project if you are looking to setup an LRS for testing purposes, try the live demo linked below.',
       link_ex: 'https://lrs.adlnet.gov',
@@ -14,7 +14,7 @@ $(function() {
       link_gh: 'https://github.com/adlnet/ADL_LRS'
     },
     {
-      tags: ["xAPI","LRSTools","APTools"],
+      tags: ["LRSTools","APTools","xAPI"],
       color: 'blue',
       icon: 'fa-flask',
       title: 'xAPI Lab',
@@ -24,7 +24,7 @@ $(function() {
       link_gh: 'https://github.com/adlnet/xapi-lab'
     },
     {
-      tags: ["xAPI","LRSTools"],
+      tags: ["LRSTools","xAPI"],
       color: 'blue',
       icon: 'fa-list',
       title: 'xAPI Statement Viewer',
@@ -34,7 +34,7 @@ $(function() {
       link_gh: 'https://github.com/adlnet/xapi-statement-viewer'
     },
     {
-      tags: ["xAPI","APTools"],
+      tags: ["APTools","xAPI"],
       color: 'blue',
       icon: 'fa-gift',
       title: 'xAPI Wrapper',
@@ -44,7 +44,7 @@ $(function() {
       link_gh: 'https://github.com/adlnet/xAPIWrapper'
     },
     {
-      tags: ["xAPI","LRSTools","Reporting"],
+      tags: ["Reporting","LRSTools","xAPI"],
       color: 'blue',
       icon: 'fa-bar-chart',
       title: 'xAPI Dashboard',
@@ -54,7 +54,7 @@ $(function() {
       link_gh: 'https://github.com/adlnet/xAPI-Dashboard'
     },
     {
-      tags: ["xAPI","APTools"],
+      tags: ["APTools","xAPI"],
       color: 'blue',
       icon: 'fa-puzzle-piece',
       title: 'xAPI API Client Examples',
@@ -64,7 +64,7 @@ $(function() {
       link_gh: 'https://github.com/adlnet/experienceapi_client_examples'
     },
     {
-      tags: ["xAPI","APTools","Mobile"],
+      tags: ["Mobile","APTools","xAPI"],
       color: 'blue',
       icon: 'fa-mobile',
       title: 'xAPI jQuery Mobile',
@@ -74,7 +74,7 @@ $(function() {
       link_gh: 'https://github.com/adlnet/experienceapi_client_examples'
     },
     {
-      tags: ["xAPI","SCORM","APTools"],
+      tags: ["SCORM","APTools","xAPI"],
       color: 'blue',
       icon: 'fa-cogs',
       title: 'SCORM to xAPI Wrapper',
@@ -82,7 +82,7 @@ $(function() {
       link_gh: 'https://github.com/adlnet/SCORM-to-xAPI-Wrapper'
     },
     {
-      tags: ["xAPI","SCORM","Profile"],
+      tags: ["Profile","SCORM","xAPI"],
       color: 'blue',
       icon: 'fa-cog',
       title: 'xAPI SCORM Profile',
@@ -102,7 +102,7 @@ $(function() {
       link_gh: 'https://github.com/adlnet/Sandbox'
     },
     {
-      tags: ["xAPI","Tutorials"],
+      tags: ["Tutorials","xAPI"],
       color: 'blue',
       icon: 'fa-group',
       title: 'xAPI Cohort Resources',
@@ -110,12 +110,28 @@ $(function() {
       link_ex: 'http://adlnet.github.io/xapi-cohorts',
       link_ex_title: 'Website',
       link_gh: 'https://github.com/adlnet/xapi-cohorts'
+    },
+    {
+      tags: ["APTools","xAPI"],
+      color: 'blue',
+      icon: 'fa-language',
+      title: 'xAPI Verbs',
+      description: 'Predefined ADL Experience API Verbs.',
+      link_gh: 'https://github.com/adlnet/xAPIVerbs'
+    },
+    {
+      tags: [],
+      color: 'grey',
+      icon: 'fa-github',
+      title: 'ADL on Github',
+      description: 'The adlnet organization on github.',
+      link_gh: 'https://github.com/adlnet'
     }
   ];
 
   // Wrote this function because HB is adding &#8203 characters that screw up the tag lists
   Handlebars.registerHelper('listDataGroups', function(items, options) {
-    var out = '<li class="active"><a href="#" data-group="">all</a></li>';
+    var out = '<li class="active"><a href="#" data-group="">All</a></li>';
     for(var i=0, l=items.length; i<l; i++) { out += '<li><a href="#" data-group="' + options.fn(items[i]) + '">' + options.fn(items[i]) + '</a></li>'; }
     return out;
   });

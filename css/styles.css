@@ -28,6 +28,7 @@
 .box-icon-red { background-color: #DC381F; }
 .box-icon-green { background-color: #37B733; }
 .box-icon-purple { background-color: #B733B4; }
+.box-icon-grey { background-color: #4D4D4D; }
 .box-icon span {
     color: #fff;
     display: table-cell;
@@ -81,7 +82,7 @@
     right: 0px;
     width: 0px;
     padding: 5px 0px 5px 0px;
-    background-color: rgb(245, 245, 245);
+    background-color: #f5f5f5;
     font-size: 12px;
     overflow: hidden;
 }
@@ -91,7 +92,7 @@
     top: 0px;
     right: 0px;
     height: 100%;
-    border-right: 3px solid rgb(66, 127, 237);
+    border-right: 3px solid #337AB7;
 }
 .info > .panel-google-plus-tags > ul:hover > li,
 .info > .panel-google-plus-tags > ul > li:first-child {
@@ -101,9 +102,9 @@
     margin-left: auto;
 }
 .info > .panel-google-plus-tags > ul:hover > li {
-    background-color: rgb(255, 255, 255);   
+    background-color: #fff;   
 }
 .info > .panel-google-plus-tags > ul > li:hover {
-    background-color: rgb(66, 127, 237);
-    color: rgb(255, 255, 255);
+    background-color: #337AB7;
+    color: #fff;
 }
