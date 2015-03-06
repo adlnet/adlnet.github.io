@@ -1,6 +1,6 @@
 $(function() {
 
-  var groups = ["xAPI","LRS","LRSTools","APTools","Reporting","Mobile",SCORM","Profile","VirtualWorlds","Tutorials"];
+  var groups = ["xAPI","LRS","LRSTools","APTools","Reporting","Mobile","SCORM","Profile","VirtualWorlds","Tutorials"];
 
   var items = [
     {
