@@ -176,4 +176,9 @@ $(function() {
     e.preventDefault();
 
   });
+
+  // Allow filtering by tags
+  $('.panel-google-plus-tags li').click(function() {
+    $('#filter a[data-group="' + $(this).text().substring(1) + '"]').click();
+  });
 });
