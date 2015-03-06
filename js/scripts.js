@@ -138,10 +138,7 @@ $(function() {
 
   // Converts an array to '['item1','item2']' string notation
   Handlebars.registerHelper('arrayToString', function(items, options) {
-    var out = '[';
-    for(var i=0, l=items.length; i<l; i++) { out += '"' + options.fn(items[i]) + '",'; }
-    var out = out.slice(0, -1) + ']';
-    return out;
+    return JSON.stringify(items);
   });
 
   // Wrote this function because HB is adding &#8203 characters that screw up the tag lists
