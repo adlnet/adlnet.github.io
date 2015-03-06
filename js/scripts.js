@@ -74,6 +74,14 @@ $(function() {
       link_gh: 'https://github.com/adlnet/experienceapi_client_examples'
     },
     {
+      tags: ["APTools","xAPI"],
+      color: 'blue',
+      icon: 'fa-coffee',
+      title: 'jxapi',
+      description: 'Experience API Java library.',
+      link_gh: 'https://github.com/adlnet/jxapi'
+    },
+    {
       tags: ["SCORM","APTools","xAPI"],
       color: 'blue',
       icon: 'fa-cogs',
