@@ -137,7 +137,7 @@ $(function() {
     }
   ];
 
-  // Wrote this function because HB is adding &#8203 characters that screw up the tag lists
+  // Build the menu
   Handlebars.registerHelper('listDataGroups', function(items, options) {
     var out = '<li class="active"><a href="#" data-group="">All</a></li>';
     for(var i=0, l=items.length; i<l; i++) { out += '<li><a href="#" data-group="' + options.fn(items[i]) + '">' + options.fn(items[i]) + '</a></li>'; }
@@ -149,10 +149,10 @@ $(function() {
     return JSON.stringify(items);
   });
 
-  // Wrote this function because HB is adding &#8203 characters that screw up the tag lists
+  // List the tags on the card
   Handlebars.registerHelper('listTags', function(items, options) {
     var out = '<ul>';
-    for(var i=0, l=items.length; i<l; i++) { out += '<li>#' + options.fn(items[i]).substring(1) + '</li>'; }
+    for(var i=0, l=items.length; i<l; i++) { out += '<li>#' + options.fn(items[i]) + '</li>'; }
     out += '</ul>';
     return out;
   });
@@ -160,14 +160,14 @@ $(function() {
   // Get the HTML from the template in the script tag​
   var groupScript = $('#group-list-template').html(); 
 
-  // Compile the template​
+  // Compile the template
   var groupTemplate = Handlebars.compile(groupScript);
   $('#filter').append(groupTemplate(groups)); 
 
   // Get the HTML from the template in the script tag​
   var itemScript = $('#item-template').html(); 
 
-  // Compile the template​
+  // Compile the template
   var itemTemplate = Handlebars.compile(itemScript);
   $('#grid').append(itemTemplate(items)); 
 
