@@ -54,6 +54,16 @@ $(function() {
       link_gh: 'https://github.com/adlnet/xAPI-Dashboard'
     },
     {
+      tags: ["xAPI"],
+      color: 'blue',
+      icon: 'fa-quote-right',
+      title: 'xAPI Remarks',
+      description: 'A shorthand syntax for communicating xAPI Statements. This is helpful for rapidly generating statements that you can send to an LRS to advise you on reporting.',
+      link_ex: 'http://adlnet.github.io/xapi-remarks',
+      link_ex_title: 'Website',
+      link_gh: 'https://github.com/adlnet/xapi-remarks'
+    },
+    {
       tags: ["APTools","xAPI"],
       color: 'blue',
       icon: 'fa-puzzle-piece',
