@@ -54,6 +54,16 @@ $(function() {
       link_gh: 'https://github.com/adlnet/xAPI-Dashboard'
     },
     {
+      tags: ["LRSTools","APTools","Reporting","xAPI"],
+      color: 'blue',
+      icon: 'fa-circle-o-notch',
+      title: 'xAPI Canteen',
+      description: 'Build, save and share your queries to a LRS. Don\'t report without it!',
+      link_ex: 'http://adlnet.github.io/xapi-canteen',
+      link_ex_title: 'Live Demo',
+      link_gh: 'https://github.com/adlnet/xapi-canteen'
+    },
+    {
       tags: ["xAPI"],
       color: 'blue',
       icon: 'fa-quote-right',
