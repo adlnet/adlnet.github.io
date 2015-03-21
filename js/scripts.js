@@ -226,7 +226,6 @@ $(function() {
   // Filter by location hash
   var hash = window.location.hash;
   if (hash) {
-    console.log(hash);
     $('#filter a[data-group="' + hash.substring(1) + '"]').click();
   }
 });
