@@ -1,6 +1,6 @@
 $(function() {
 
-  var groups = ["xAPI","LRS","LRSTools","APTools","Reporting","Mobile","SCORM","Profile","VirtualWorlds","Tutorials"];
+  var groups = ["xAPI","LRS","LRSTools","APTools","Reporting","Mobile","SCORM","Profile","VirtualWorlds","Tutorials",'Reuse'];
 
   var items = [
     {
@@ -146,6 +146,36 @@ $(function() {
       title: 'xAPI Verbs',
       description: 'Predefined ADL Experience API Verbs.',
       link_gh: 'https://github.com/adlnet/xAPIVerbs'
+    },
+    {
+      tags: ['Reuse'],
+      color: 'blue',
+      icon: 'fa-sitemap',
+      title: 'RUSSEL',
+      description: 'Re-Usability Support System for eLearning is an open-source software project to manage and repurpose courses, documents and multimedia assets. It will make content more useful through a rich metadata environment with ratings, analytics and comments that will support communities of practice and collaboration. It will include an Electronic Performance Support System (EPSS) for reuse and repurposing of SCORM-conformant content based on instructional design best practices and reusable design frameworks.',
+      link_ex: 'http://russel.adlnet.org',
+      link_ex_title: 'Website',
+      link_gh: 'https://github.com/adlnet/RUSSEL'
+    },
+    {
+      tags: ['Reuse'],
+      color: 'blue',
+      icon: 'fa-search-plus',
+      title: 'DECALS',
+      description: 'Data for Enabling Content in Adaptive Learning Systems is an open-source software project that builds on the foundation set forth in the RUSSEL Project. It adds interactive search, user content contribution, and machine actionable metadata capabilities to the Learning Registry.',
+      link_ex: 'http://lr.adlnet.org',
+      link_ex_title: 'Website',
+      link_gh: 'https://github.com/adlnet/DECALS'
+    },
+    {
+      tags: ['Reuse'],
+      color: 'blue',
+      icon: 'fa-repeat',
+      title: 'Learning Registry',
+      description: 'A joint project of the U.S. Departments of Education and Defense providing a new approach to capturing, connecting, and sharing data about learning resources.',
+      link_ex: 'http://learningregistry.org',
+      link_ex_title: 'Website',
+      link_gh: 'https://github.com/LearningRegistry'
     },
     {
       tags: [],
