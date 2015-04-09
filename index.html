@@ -59,7 +59,43 @@
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/lib/handlebars-v3.0.0.js"></script>
   <script type="text/javascript" src="js/lib/jquery.shuffle.modernizr.min.js"></script>
+  <script type="text/javascript" src="js/lib/xapiwrapper.min.js"></script>
   <script type="text/javascript" src="js/scripts.js"></script>
+  <script type="text/javascript">
+    // wrapper wrapper
+    var ww = true;
+    if (ww) {
+      var uid = Math.random().toString(36).substr(2, 5);
 
+      var conf = {
+         "endpoint" : "https://lrs.adlnet.gov/xapi/",
+         "auth" : "Basic " + toBase64('tom:1234'),
+      };
+      ADL.XAPIWrapper.changeConfig(conf);
+
+      document.onclick = function(event) {
+        var el = event.target;
+        if (el.nodeName == "A") {
+          ADL.XAPIWrapper.sendStatement(
+            new ADL.XAPIStatement(
+              { mbox: 'mailto:' + uid + '@adlnet.github.io', name: uid },
+              { id: 'http://adlnet.gov/expapi/verbs/interacted', display: { 'en-US': 'clicked' } },
+              el.href
+            )
+          );
+        }
+      };
+      
+      window.onload = function() {
+        ADL.XAPIWrapper.sendStatement(
+          new ADL.XAPIStatement(
+            { mbox: 'mailto:' + uid + '@adlnet.github.io', name: uid },
+            { id: 'http://adlnet.gov/expapi/verbs/initialized', display: { 'en-US': 'initialized' } },
+            'http://adlnet.github.io'
+          )
+        );
+      };
+    }
+  </script>
 </body>
 </html>

@@ -190,7 +190,7 @@ $(function() {
   // Build the menu
   Handlebars.registerHelper('listDataGroups', function(items, options) {
     var out = '<li class="active"><a href="#" data-group="">All</a></li>';
-    for(var i=0, l=items.length; i<l; i++) { out += '<li><a href="#" data-group="' + options.fn(items[i].toLowerCase()) + '">' + options.fn(items[i]) + '</a></li>'; }
+    for(var i=0, l=items.length; i<l; i++) { out += '<li><a href="#' + options.fn(items[i].toLowerCase()) + '" data-group="' + options.fn(items[i].toLowerCase()) + '">' + options.fn(items[i]) + '</a></li>'; }
     return out;
   });
 
