@@ -190,13 +190,13 @@ $(function() {
   // Build the menu
   Handlebars.registerHelper('listDataGroups', function(items, options) {
     var out = '<li class="active"><a href="#" data-group="">All</a></li>';
-    for(var i=0, l=items.length; i<l; i++) { out += '<li><a href="#" data-group="' + options.fn(items[i]) + '">' + options.fn(items[i]) + '</a></li>'; }
+    for(var i=0, l=items.length; i<l; i++) { out += '<li><a href="#" data-group="' + options.fn(items[i].toLowerCase()) + '">' + options.fn(items[i]) + '</a></li>'; }
     return out;
   });
 
   // Converts an array to '['item1','item2']' string notation
   Handlebars.registerHelper('arrayToString', function(items, options) {
-    return JSON.stringify(items);
+    return JSON.stringify(items).toLowerCase();
   });
 
   // List the tags on the card
@@ -250,12 +250,12 @@ $(function() {
 
   // Allow filtering by tags
   $('.panel-google-plus-tags li').click(function() {
-    $('#filter a[data-group="' + $(this).text().substring(1) + '"]').click();
+    $('#filter a[data-group="' + $(this).text().substring(1).toLowerCase() + '"]').click();
   });
   
   // Filter by location hash
   var hash = window.location.hash;
   if (hash) {
-    $('#filter a[data-group="' + hash.substring(1) + '"]').click();
+    $('#filter a[data-group="' + hash.substring(1).toLowerCase() + '"]').click();
   }
 });
