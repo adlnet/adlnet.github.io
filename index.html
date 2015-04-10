@@ -76,14 +76,13 @@
       document.onclick = function(event) {
         var el = event.target;
         if (el.nodeName == "A") {
-          ADL.XAPIWrapper.sendStatement(
-            new ADL.XAPIStatement(
-              { mbox: 'mailto:' + uid + '@adlnet.github.io', name: uid },
-              { id: 'http://adlnet.gov/expapi/verbs/interacted', display: { 'en-US': 'clicked' } },
-              el.href
-            ),
-            true
+          var stmt = new ADL.XAPIStatement(
+            { mbox: 'mailto:' + uid + '@adlnet.github.io', name: uid },
+            { id: 'http://adlnet.gov/expapi/verbs/interacted', display: { 'en-US': 'clicked' } },
+            el.href
           );
+          stmt.addParentActivity(location.href);
+          ADL.XAPIWrapper.sendStatement(stmt, function(){});
         }
       };
       
@@ -94,7 +93,7 @@
             { id: 'http://adlnet.gov/expapi/verbs/initialized', display: { 'en-US': 'initialized' } },
             'http://adlnet.github.io'
           ),
-          true
+          function(){}
         );
       };
     }
