@@ -87,14 +87,15 @@
       };
       
       window.onload = function() {
-        ADL.XAPIWrapper.sendStatement(
-          new ADL.XAPIStatement(
-            { mbox: 'mailto:' + uid + '@adlnet.github.io', name: uid },
-            { id: 'http://adlnet.gov/expapi/verbs/initialized', display: { 'en-US': 'initialized' } },
-            'http://adlnet.github.io'
-          ),
-          function(){}
+        var stmt = new ADL.XAPIStatement(
+          { mbox: 'mailto:' + uid + '@adlnet.github.io', name: uid },
+          { id: 'http://adlnet.gov/expapi/verbs/initialized', display: { 'en-US': 'initialized' } },
+          'http://adlnet.github.io'
         );
+        if (document.referrer) {
+          stmt.addGroupingActivity(document.referrer);
+        }
+        ADL.XAPIWrapper.sendStatement(stmt, function(){});
       };
     }
   </script>
