@@ -86,6 +86,16 @@ $(function() {
     {
       tags: ["Mobile","APTools","xAPI"],
       color: 'blue',
+      icon: 'fa-youtube',
+      title: 'xAPI Youtube',
+      description: 'Send Youtube Video interactions to an LRS with xAPI.',
+      link_ex: 'http://adlnet.github.io/xapi-youtube',
+      link_ex_title: 'Website',
+      link_gh: 'https://github.com/adlnet/xapi-youtube'
+    },
+    {
+      tags: ["Mobile","APTools","xAPI"],
+      color: 'blue',
       icon: 'fa-mobile',
       title: 'xAPI jQuery Mobile',
       description: 'Integration of xAPI using jQuery Mobile with course examples and templates to get you started.',
