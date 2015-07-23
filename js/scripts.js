@@ -101,7 +101,7 @@ $(function() {
       description: 'Integration of xAPI using jQuery Mobile with course examples and templates to get you started.',
       link_ex: 'http://adlnet.github.io/xapi-jqm',
       link_ex_title: 'Website',
-      link_gh: 'https://github.com/adlnet/experienceapi_client_examples'
+      link_gh: 'https://github.com/adlnet/xapi-jqm'
     },
     {
       tags: ["APTools","xAPI"],
