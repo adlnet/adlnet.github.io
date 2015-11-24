@@ -54,26 +54,6 @@ $(function() {
       link_gh: 'https://github.com/adlnet/xAPI-Dashboard'
     },
     {
-      tags: ["LRSTools","APTools","Reporting","xAPI"],
-      color: 'blue',
-      icon: 'fa-circle-o-notch',
-      title: 'xAPI Canteen',
-      description: 'Build, save and share your queries to a LRS. Don\'t report without it!',
-      link_ex: 'http://adlnet.github.io/xapi-canteen',
-      link_ex_title: 'Live Demo',
-      link_gh: 'https://github.com/adlnet/xapi-canteen'
-    },
-    {
-      tags: ["xAPI"],
-      color: 'blue',
-      icon: 'fa-quote-right',
-      title: 'xAPI Remarks',
-      description: 'A shorthand syntax for communicating xAPI Statements. This is helpful for rapidly generating statements that you can send to an LRS to advise you on reporting.',
-      link_ex: 'http://adlnet.github.io/xapi-remarks',
-      link_ex_title: 'Website',
-      link_gh: 'https://github.com/adlnet/xapi-remarks'
-    },
-    {
       tags: ["APTools","xAPI"],
       color: 'blue',
       icon: 'fa-puzzle-piece',
@@ -138,16 +118,6 @@ $(function() {
       link_ex: 'http://vwf.adlnet.gov',
       link_ex_title: 'Website',
       link_gh: 'https://github.com/adlnet/Sandbox'
-    },
-    {
-      tags: ["Tutorials","xAPI"],
-      color: 'blue',
-      icon: 'fa-group',
-      title: 'xAPI Cohort Resources',
-      description: 'An archive of xAPI resources developed by and for groups in the xAPI Design Cohorts.',
-      link_ex: 'http://adlnet.github.io/xapi-cohorts',
-      link_ex_title: 'Website',
-      link_gh: 'https://github.com/adlnet/xapi-cohorts'
     },
     {
       tags: ["APTools","xAPI"],
