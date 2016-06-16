@@ -59,7 +59,7 @@ $(function() {
       icon: 'fa-puzzle-piece',
       title: 'xAPI API Client Examples',
       description: 'These are client examples to help you learn and get started using the new API. These were created under the original Broad Agency Announcement (BAA) effort and have been updated to use the latest version of the xAPI. The samples include a Statement viewer, a Reporting example, and a Tetris game example. Use these examples to test out connectivity to a Learning Record Store or write learning content that is compatible with using the xAPI.',
-      link_ex: 'https://lrs.adlnet.gov/prototypes',
+      link_ex: 'http://adlnet.github.io/experienceapi_client_examples/',
       link_ex_title: 'Live Demo',
       link_gh: 'https://github.com/adlnet/experienceapi_client_examples'
     },
