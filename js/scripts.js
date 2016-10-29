@@ -128,6 +128,36 @@ $(function() {
       link_gh: 'https://github.com/adlnet/xAPIVerbs'
     },
     {
+      tags: ['Tutorials'],
+      color: 'blue',
+      icon: 'fa-file-text',
+      title: 'Intro to Developing Web-based xAPI Content',
+      description: 'This project was created to support various xAPI Workshops.',
+      link_ex: 'https://github.com/adlnet/Intro-to-Developing-Web-based-xAPI-Content/blob/master/webcontent/Readme.md',
+      link_ex_title: 'Code Tutorial',
+      link_gh: 'https://github.com/adlnet/Intro-to-Developing-Web-based-xAPI-Content'
+    },
+    {
+      tags: ['Tutorials'],
+      color: 'blue',
+      icon: 'fa-file-text',
+      title: 'Starting from SCORM: A Developer’s Guide',
+      description: 'This project was first presented at the ADL xAPI Bootcamp in Alexandria, VA in 2015. It is now being maintained here to allow others to access this workshop. If you are interested in try the code tutorial, refer to the steps in the Instructions.',
+      link_ex: 'https://github.com/adlnet/Starting-from-SCORM-A-Developers-Guide/blob/master/Instructions.md',
+      link_ex_title: 'Instructions',
+      link_gh: 'https://github.com/adlnet/Starting-from-SCORM-A-Developers-Guide'
+    },
+    {
+      tags: ['Tutorials'],
+      color: 'blue',
+      icon: 'fa-file-text',
+      title: 'xAPI Data Visualization and Dashboards',
+      description: 'This project was created to support various xAPI Workshops. If you are interested in trying the code tutorial, refer to the steps in the Instructions in the reporting Readme.',
+      link_ex: 'https://github.com/adlnet/Intro-to-xAPI-Data-Visualization/tree/master/reporting/README.md',
+      link_ex_title: 'README',
+      link_gh: 'https://github.com/adlnet/Intro-to-xAPI-Data-Visualization'
+    },
+    {
       tags: ['Reuse'],
       color: 'blue',
       icon: 'fa-sitemap',
