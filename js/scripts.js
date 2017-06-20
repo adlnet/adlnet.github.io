@@ -1,6 +1,6 @@
 $(function() {
 
-  var groups = ["xAPI","LRS","LRSTools","APTools","Reporting","Mobile","SCORM","Profile","VirtualWorlds","Tutorials"];
+  var groups = ["xAPI","LRS","LRSTools","APTools","Reporting","Mobile","SCORM","Profile","VirtualWorlds","Tutorials", "Workshops"];
 
   var items = [
     {
@@ -14,6 +14,16 @@ $(function() {
       link_gh: 'https://github.com/adlnet/ADL_LRS'
     },
     {
+      tags: ["LRSTools","xAPI"],
+      color: 'blue',
+      icon: 'fa-check-circle-o',
+      title: 'LRS Conformance Test Suite',
+      description: 'This is a NodeJS project that tests the \'MUST\' requirements of the xAPI Spec and is based on the ADL testing requirements repository. This is actively being developed and new tests will be periodically added based on the testing requirements.',
+      link_ex: 'https://lrstest.adlnet.gov/',
+      link_ex_title: 'Website',
+      link_gh: 'https://github.com/adlnet/lrs-conformance-test-suite'
+    },    
+    {
       tags: ["LRSTools","APTools","xAPI"],
       color: 'blue',
       icon: 'fa-flask',
@@ -24,7 +34,7 @@ $(function() {
       link_gh: 'https://github.com/adlnet/xapi-lab'
     },
     {
-      tags: ["LRSTools","xAPI"],
+      tags: ["LRSTools", "xAPI", "APTools"],
       color: 'blue',
       icon: 'fa-list',
       title: 'xAPI Statement Viewer',
@@ -34,7 +44,7 @@ $(function() {
       link_gh: 'https://github.com/adlnet/xapi-statement-viewer'
     },
     {
-      tags: ["APTools","xAPI"],
+      tags: ["APTools","xAPI", "APTools"],
       color: 'blue',
       icon: 'fa-gift',
       title: 'xAPI Wrapper',
@@ -44,7 +54,7 @@ $(function() {
       link_gh: 'https://github.com/adlnet/xAPIWrapper'
     },
     {
-      tags: ["Reporting","LRSTools","xAPI"],
+      tags: ["Reporting","LRSTools","xAPI", "APTools"],
       color: 'blue',
       icon: 'fa-bar-chart',
       title: 'xAPI Dashboard',
@@ -54,23 +64,13 @@ $(function() {
       link_gh: 'https://github.com/adlnet/xAPI-Dashboard'
     },
     {
-      tags: ["LRSTools","xAPI"],
-      color: 'blue',
-      icon: 'fa-check-circle-o',
-      title: 'LRS Conformance Test Suite',
-      description: 'This is a NodeJS project that tests the \'MUST\' requirements of the xAPI Spec and is based on the ADL testing requirements repository. This is actively being developed and new tests will be periodically added based on the testing requirements.',
-      link_ex: 'https://lrstest.adlnet.gov/',
-      link_ex_title: 'Conformance Suite',
-      link_gh: 'https://github.com/adlnet/lrs-conformance-test-suite'
-    },
-    {
       tags: ["APTools","xAPI"],
       color: 'blue',
       icon: 'fa-share',
       title: 'xAPI Launch',
       description: 'xAPI Launch exists primarily to enable a learner to track experiences from any learning resource without some out-of-band method to add LRS credentials to the content, and without asking the user to input these credentials into some untrused third-party system. It also ensures that statements which claim to be part of an experience really came from that experience.',
       link_ex: 'http://adlnet.github.io/xapi-launch',
-      link_ex_title: 'xAPI Launch',
+      link_ex_title: 'Website',
       link_gh: 'https://github.com/adlnet/xapi-launch'
     },
     {
@@ -80,11 +80,11 @@ $(function() {
       title: 'xAPI Roses',
       description: 'This app follows the ADL SCORM Profile for xAPI enabled learning content that allows organizations to incrementally transition from a centralized SCORM LMS to diverse and flexible systems without the loss of interoperability. As a user progresses through the different modules, statements are recorded that contain the same data that SCORM modules also collect.',
       link_ex: 'https://play.google.com/store/apps/details?id=org.adl.roses&hl=en',
-      link_ex_title: 'Roses App',
+      link_ex_title: 'Install App',
       link_gh: 'https://github.com/adlnet/xAPI-Android-Roses'
     },    
     {
-      tags: ["APTools","xAPI"],
+      tags: ["APTools","xAPI", "Reporting"],
       color: 'blue',
       icon: 'fa-puzzle-piece',
       title: 'xAPI API Client Examples',
@@ -122,7 +122,7 @@ $(function() {
       link_gh: 'https://github.com/adlnet/jxapi'
     },
     {
-      tags: ["SCORM","APTools","xAPI"],
+      tags: ["SCORM","APTools","xAPI", "Profile"],
       color: 'blue',
       icon: 'fa-cogs',
       title: 'SCORM to xAPI Wrapper',
@@ -140,14 +140,12 @@ $(function() {
       link_gh: 'https://github.com/adlnet/xAPI-SCORM-Profile'
     },
     {
-      tags: ["VirtualWorlds"],
+      tags: ["Profile","SCORM","xAPI"],
       color: 'blue',
-      icon: 'fa-cube',
-      title: 'Sandbox',
-      description: 'The ADL Sandbox is a persistent virtual environment that runs in a web browser.',
-      link_ex: 'http://vwf.adlnet.gov',
-      link_ex_title: 'Website',
-      link_gh: 'https://github.com/adlnet/Sandbox'
+      icon: 'fa-cog',
+      title: 'cmi5 Profile',
+      description: 'Document describing how to report cmi5 data to the Experience API.',
+      link_gh: 'https://github.com/AICC/CMI-5_Spec_Current'
     },
     {
       tags: ['Tutorials'],
@@ -159,6 +157,16 @@ $(function() {
       link_ex_title: 'Code Tutorial',
       link_gh: 'https://github.com/adlnet/Intro-to-Developing-Web-based-xAPI-Content'
     },
+        {
+      tags: ['Tutorials'],
+      color: 'blue',
+      icon: 'fa-file-text',
+      title: 'Intro to xAPI Video Experiences',
+      description: 'This project was created to support online video content.',
+      link_ex: 'https://github.com/adlnet/Intro-to-xAPI-Video-Experiences',
+      link_ex_title: 'Code Tutorial',
+      link_gh: 'https://github.com/adlnet/Intro-to-xAPI-Video-Experiences'
+    },
     {
       tags: ['Tutorials'],
       color: 'blue',
@@ -166,7 +174,7 @@ $(function() {
       title: 'Starting from SCORM: A Developer’s Guide',
       description: 'This project was first presented at the ADL xAPI Bootcamp in Alexandria, VA in 2015. It is now being maintained here to allow others to access this workshop. If you are interested in try the code tutorial, refer to the steps in the Instructions.',
       link_ex: 'https://github.com/adlnet/Starting-from-SCORM-A-Developers-Guide/blob/master/Instructions.md',
-      link_ex_title: 'Instructions',
+      link_ex_title: 'Code Tutorial',
       link_gh: 'https://github.com/adlnet/Starting-from-SCORM-A-Developers-Guide'
     },
     {
@@ -176,9 +184,39 @@ $(function() {
       title: 'xAPI Data Visualization and Dashboards',
       description: 'This project was created to support various xAPI Workshops. If you are interested in trying the code tutorial, refer to the steps in the Instructions in the reporting Readme.',
       link_ex: 'https://github.com/adlnet/Intro-to-xAPI-Data-Visualization/tree/master/reporting/README.md',
-      link_ex_title: 'README',
+      link_ex_title: 'Code Tutorial',
       link_gh: 'https://github.com/adlnet/Intro-to-xAPI-Data-Visualization'
     },
+    {
+      tags: ['Workshops','Tutorials'],
+      color: 'blue',
+      icon: 'fa-file-text',
+      title: 'xAPI Workshops',
+      description: 'This project was created to hold some of ADL\'s xAPI presentation resources. In the presentations folder there are PowerPoint decks with different xAPI information. In the tools folder, there is a workable statement generator with a few reporting graphs.',
+      link_ex: 'https://adlnet.github.io/xAPI-Workshop/Tools/StatementGenerator/',
+      link_ex_title: 'Workshop Demo',
+      link_gh: 'https://github.com/adlnet/xAPI-Workshop/tree/master/Presentations'
+    },
+    {
+      tags: ['Profile', 'xAPI'],
+      color: 'blue',
+      icon: 'fa-file-text',
+      title: 'xAPI Vocabulary',
+      description: 'A vocabulary scheme for IRI persistence when using xAPI verbs and activity types.',
+      link_ex: 'http://xapi.vocab.pub/datasets/adl/',
+      link_ex_title: 'Website',
+      link_gh: 'https://github.com/adlnet/xapi-vocabulary'
+    },
+    {
+      tags: ["VirtualWorlds"],
+      color: 'blue',
+      icon: 'fa-cube',
+      title: 'Sandbox',
+      description: 'The ADL Sandbox is a persistent virtual environment that runs in a web browser.',
+      link_ex: 'http://vwf.adlnet.gov',
+      link_ex_title: 'Website',
+      link_gh: 'https://github.com/adlnet/Sandbox'
+    },    
     {
       tags: [],
       color: 'grey',
