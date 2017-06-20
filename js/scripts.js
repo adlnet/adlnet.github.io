@@ -54,6 +54,36 @@ $(function() {
       link_gh: 'https://github.com/adlnet/xAPI-Dashboard'
     },
     {
+      tags: ["LRSTools","xAPI"],
+      color: 'blue',
+      icon: 'fa-check-circle-o',
+      title: 'LRS Conformance Test Suite',
+      description: 'This is a NodeJS project that tests the \'MUST\' requirements of the xAPI Spec and is based on the ADL testing requirements repository. This is actively being developed and new tests will be periodically added based on the testing requirements.',
+      link_ex: 'https://lrstest.adlnet.gov/',
+      link_ex_title: 'Conformance Suite',
+      link_gh: 'https://github.com/adlnet/lrs-conformance-test-suite'
+    },
+    {
+      tags: ["APTools","xAPI"],
+      color: 'blue',
+      icon: 'fa-share',
+      title: 'xAPI Launch',
+      description: 'xAPI Launch exists primarily to enable a learner to track experiences from any learning resource without some out-of-band method to add LRS credentials to the content, and without asking the user to input these credentials into some untrused third-party system. It also ensures that statements which claim to be part of an experience really came from that experience.',
+      link_ex: 'http://adlnet.github.io/xapi-launch',
+      link_ex_title: 'xAPI Launch',
+      link_gh: 'https://github.com/adlnet/xapi-launch'
+    },
+    {
+      tags: ["Mobile","xAPI", "Profile"],
+      color: 'blue',
+      icon: 'fa-mobile',
+      title: 'xAPI Roses',
+      description: 'This app follows the ADL SCORM Profile for xAPI enabled learning content that allows organizations to incrementally transition from a centralized SCORM LMS to diverse and flexible systems without the loss of interoperability. As a user progresses through the different modules, statements are recorded that contain the same data that SCORM modules also collect.',
+      link_ex: 'https://play.google.com/store/apps/details?id=org.adl.roses&hl=en',
+      link_ex_title: 'Roses App',
+      link_gh: 'https://github.com/adlnet/xAPI-Android-Roses'
+    },    
+    {
       tags: ["APTools","xAPI"],
       color: 'blue',
       icon: 'fa-puzzle-piece',
