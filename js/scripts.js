@@ -3,6 +3,20 @@ $(function() {
   var groups = ["xAPI","LRS","LRSTools","APTools","Reporting","Mobile","SCORM","Profile","VirtualWorlds","Tutorials", "Workshops"];
 
   var items = [
+    
+
+    // Keycloak Integration Slides 
+    {
+      tags: ["Tutorials"],
+      color: 'red',
+      icon: 'fa-flask',
+      title: 'Keycloak IdP Integration',
+      description: 'Slide deck explaining how to integrate Keycloak with an external Identity Provider.',
+      link_gh: "https://github.com/vbhayden/keycloak-federation-examples",
+      link_ex: 'public/adl-tutorial-keycloak-id-providers.pdf',
+      link_ex_title: 'PDF',
+    },
+
     {
       tags: ["LRS","xAPI"],
       color: 'blue',
@@ -224,7 +238,7 @@ $(function() {
       title: 'ADL on Github',
       description: 'The adlnet organization on github.',
       link_gh: 'https://github.com/adlnet'
-    }
+    },
   ];
 
   // Build the menu

@@ -50,7 +50,7 @@
                       <p>{{{description}}}</p>
                       {{#if this.link_ex}}<a href="{{link_ex}}" target="_blank" class="btn"><i class="fa fa-external-link"></i> {{link_ex_title}}</a>{{/if}}
                       {{#if this.link_ref}}<a href="{{link_ref}}" target="_blank" class="btn readme"><i class="fa fa-file-text"></i> {{link_ref_title}}</a>{{/if}}
-                      <a href="{{link_gh}}" target="_blank" class="btn github"><i class="fa fa-github"></i> Github</a>
+                      {{#if this.link_gh}}<a href="{{link_gh}}" target="_blank" class="btn github"><i class="fa fa-github"></i> Github</a>{{/if}}
                   </div>
               </div>
           </div>
