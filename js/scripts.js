@@ -8,7 +8,7 @@ $(function() {
     // Keycloak Integration Slides 
     {
       tags: ["Tutorials"],
-      color: 'red',
+      color: 'blue',
       icon: 'fa-flask',
       title: 'Keycloak IdP Integration',
       description: 'Slide deck explaining how to integrate Keycloak with an external Identity Provider.',
