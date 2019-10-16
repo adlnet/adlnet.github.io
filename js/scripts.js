@@ -4,8 +4,17 @@ $(function() {
 
   var items = [
     
-
     // Keycloak Integration Slides 
+    {
+      tags: ["Reporting"],
+      color: 'red',
+      icon: 'fa-flask',
+      title: "TADLP's IMI Cost Calculator",
+      description: 'Method of Instruction Cost Estimation and Comparison Calculator v1.03.',
+      link_gh: "https://github.com/adlnet/imi-cost-calc",
+      link_ex: 'https://adlnet.github.io/imi-calc',
+      link_ex_title: 'View Tool',
+    },
     {
       tags: ["Tutorials"],
       color: 'blue',
@@ -16,7 +25,6 @@ $(function() {
       link_ex: 'public/adl-tutorial-keycloak-id-providers.pdf',
       link_ex_title: 'PDF',
     },
-
     {
       tags: ["LRS","xAPI"],
       color: 'blue',
