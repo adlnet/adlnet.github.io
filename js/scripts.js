@@ -1,6 +1,6 @@
 $(function() {
 
-  var groups = ["xAPI","LRS","LRSTools","APTools","Reporting","Mobile","SCORM","Profile","VirtualWorlds","Tutorials", "Workshops"];
+  var groups = ["xAPI","LRS","LRSTools","APTools","Reporting","Mobile","Profile","Tutorials", "Workshops", "Catapult"];
 
   var items = [
     
@@ -144,7 +144,7 @@ $(function() {
       link_gh: 'https://github.com/adlnet/jxapi'
     },
     {
-      tags: ["SCORM","APTools","xAPI", "Profile"],
+      tags: ["APTools","xAPI", "Profile"],
       color: 'blue',
       icon: 'fa-cogs',
       title: 'SCORM to xAPI Wrapper',
@@ -152,7 +152,7 @@ $(function() {
       link_gh: 'https://github.com/adlnet/SCORM-to-xAPI-Wrapper'
     },
     {
-      tags: ["Profile","SCORM","xAPI"],
+      tags: ["Profile","xAPI"],
       color: 'blue',
       icon: 'fa-cog',
       title: 'xAPI SCORM Profile',
@@ -162,7 +162,7 @@ $(function() {
       link_gh: 'https://github.com/adlnet/xAPI-SCORM-Profile'
     },
     {
-      tags: ["Profile","SCORM","xAPI"],
+      tags: ["Profile",,"xAPI"],
       color: 'blue',
       icon: 'fa-cog',
       title: 'cmi5 Profile',
@@ -228,17 +228,17 @@ $(function() {
       link_ex: 'http://xapi.vocab.pub/datasets/adl/',
       link_ex_title: 'Website',
       link_gh: 'https://github.com/adlnet/xapi-vocabulary'
-    },
+    },  
     {
-      tags: ["VirtualWorlds"],
+      tags: ["Catapult"],
       color: 'blue',
-      icon: 'fa-cube',
-      title: 'Sandbox',
-      description: 'The ADL Sandbox is a persistent virtual environment that runs in a web browser.',
-      link_ex: 'http://vwf.adlnet.gov',
-      link_ex_title: 'Website',
-      link_gh: 'https://github.com/adlnet/Sandbox'
-    },    
+      icon: 'fa-check-circle-o',
+      title: "The Catapult Suite",
+      description: 'A conformance testing suite for the cmi5 specification',
+      link_gh: "https://github.com/adlnet/CATAPULT",
+      link_ex: 'https://adlnet.github.io/CATAPULT/',
+      link_ex_title: 'Project Page',
+    },
     {
       tags: [],
       color: 'grey',
