@@ -3,7 +3,7 @@ All content for index.html is templated by handlebars.js using the following dat
 Tags / groups (for displaying on cards and shuffling/filtering)
 
 ```js
-var groups = ["xAPI","LRS","LRSTools","APTools","Reporting","Mobile","SCORM","Profile","VirtualWorlds","Tutorials",'Reuse'];
+var groups = ["xAPI","LRS","LRSTools","APTools","Reporting","Mobile","Profile","Tutorials","Catapult",'Reuse'];
 ```
 
 All cards (items) are defined in the items array:
