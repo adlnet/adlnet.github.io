@@ -274,6 +274,15 @@ $(function() {
       link_ex: 'https://adlnet.github.io/Share-Documents/Modernization/',
       link_ex_title: 'View Docs',
     },
+    {
+      tags: ["Documents"],
+      color: 'blue',
+      icon: 'fa-folder-open-o',
+      title: 'Moderizing Learning eBook',
+      description: 'A free copy of the 2019 publication "Modernizing Learning: Building the Future Learning environment"',
+      link_ex: 'https://adlnet.github.io/Share-Documents/eBook/',
+      link_ex_title: 'View Docs',
+    },
   ];
 
   // Build the menu
