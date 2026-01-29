@@ -256,6 +256,15 @@ $(function() {
       link_ex: 'https://adlnet.github.io/Share-Documents/TLAandStandards/',
       link_ex_title: 'View Docs',
     },
+    {
+      tags: ["Documents"],
+      color: 'blue',
+      icon: 'fa-folder-open-o',
+      title: 'DATASIM',
+      description: 'All public documentation in regards to DATASIM, a tool to simulate large quantities of xAPI data.',
+      link_ex: 'https://adlnet.github.io/Share-Documents/DATASIM/',
+      link_ex_title: 'View Docs',
+    },
   ];
 
   // Build the menu
