@@ -265,6 +265,15 @@ $(function() {
       link_ex: 'https://adlnet.github.io/Share-Documents/DATASIM/',
       link_ex_title: 'View Docs',
     },
+    {
+      tags: ["Documents"],
+      color: 'blue',
+      icon: 'fa-folder-open-o',
+      title: 'Modernization',
+      description: 'A collection of publications on the modernization of learning',
+      link_ex: 'https://adlnet.github.io/Share-Documents/DATASIM/',
+      link_ex_title: 'View Docs',
+    },
   ];
 
   // Build the menu
