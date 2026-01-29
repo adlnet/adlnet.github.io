@@ -251,29 +251,11 @@ $(function() {
       tags: ["Documents"],
       color: 'blue',
       icon: 'fa-folder-open-o',
-      title: 'Standards',
+      title: 'TLA & Standards',
       description: 'A collection of Specifications and Standards leveraged by the systems within the DLE',
-      link_ex: 'https://adlnet.github.io/Share-Documents/Standards/',
+      link_ex: 'https://adlnet.github.io/Share-Documents/TLAandStandards/',
       link_ex_title: 'View Docs',
     },
-    // {
-    //   tags: ["Documents"],
-    //   color: 'blue',
-    //   icon: 'fa-file-text',
-    //   title: 'Doc Name 1',
-    //   description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
-    //   link_ex: 'public/adl-tutorial-keycloak-id-providers.pdf',
-    //   link_ex_title: 'PDF',
-    // },
-    // {
-    //   tags: ["Documents"],
-    //   color: 'blue',
-    //   icon: 'fa-cogs',
-    //   title: 'Doc Name 2',
-    //   description: 'Doc 2',
-    //   link_ex: 'public/adl-tutorial-keycloak-id-providers.pdf',
-    //   link_ex_title: 'VSDX',
-    // },
   ];
 
   // Build the menu
