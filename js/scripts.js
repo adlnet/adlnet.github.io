@@ -1,6 +1,6 @@
 $(function() {
 
-  var groups = ["xAPI","LRS","LRSTools","APTools","Reporting","Mobile","Profile","Tutorials", "Workshops", "Catapult"];
+  var groups = ["xAPI","LRS","LRSTools","APTools","Reporting","Mobile","Profile","Tutorials", "Workshops", "Catapult", "Documents"];
 
   var items = [
     
@@ -31,8 +31,8 @@ $(function() {
       icon: 'fa-university',
       title: 'ADL LRS',
       description: 'ADL’s Open Source Learning Record Store (LRS) is used to store learning data collected with the xAPI. It is a reference implementation of the system described in the <a href="https://github.com/adlnet/xAPI-Spec" target="_blank">xAPI Spec repository</a>. Use this project if you are looking to setup an LRS for testing purposes, try the live demo linked below.',
-      link_ex: 'https://lrs.adlnet.gov',
-      link_ex_title: 'Public LRS',
+      // link_ex: 'https://lrs.adlnet.gov',
+      // link_ex_title: 'Public LRS',
       link_gh: 'https://github.com/adlnet/ADL_LRS'
     },
     {
@@ -41,8 +41,8 @@ $(function() {
       icon: 'fa-check-circle-o',
       title: 'LRS Conformance Test Suite',
       description: 'This is a NodeJS project that tests the \'MUST\' requirements of the xAPI Spec and is based on the ADL testing requirements repository. This is actively being developed and new tests will be periodically added based on the testing requirements.',
-      link_ex: 'https://lrstest.adlnet.gov/',
-      link_ex_title: 'Website',
+      // link_ex: 'https://lrstest.adlnet.gov/',
+      // link_ex_title: 'Website',
       link_gh: 'https://github.com/adlnet/lrs-conformance-test-suite'
     },    
     {
@@ -61,8 +61,8 @@ $(function() {
       icon: 'fa-list',
       title: 'xAPI Statement Viewer',
       description: 'A datatables and bootstrap based xAPI statement viewer for easier reading',
-      link_ex: 'http://adlnet.github.io/xapi-statement-viewer',
-      link_ex_title: 'Live Demo',
+      // link_ex: 'http://adlnet.github.io/xapi-statement-viewer',
+      // link_ex_title: 'Live Demo',
       link_gh: 'https://github.com/adlnet/xapi-statement-viewer'
     },
     {
@@ -101,8 +101,8 @@ $(function() {
       icon: 'fa-mobile',
       title: 'xAPI Roses',
       description: 'This app follows the ADL SCORM Profile for xAPI enabled learning content that allows organizations to incrementally transition from a centralized SCORM LMS to diverse and flexible systems without the loss of interoperability. As a user progresses through the different modules, statements are recorded that contain the same data that SCORM modules also collect.',
-      link_ex: 'https://play.google.com/store/apps/details?id=org.adl.roses&hl=en',
-      link_ex_title: 'Install App',
+      // link_ex: 'https://play.google.com/store/apps/details?id=org.adl.roses&hl=en',
+      // link_ex_title: 'Install App',
       link_gh: 'https://github.com/adlnet/xAPI-Android-Roses'
     },    
     {
@@ -111,8 +111,8 @@ $(function() {
       icon: 'fa-puzzle-piece',
       title: 'xAPI API Client Examples',
       description: 'These are client examples to help you learn and get started using the new API. These were created under the original Broad Agency Announcement (BAA) effort and have been updated to use the latest version of the xAPI. The samples include a Statement viewer, a Reporting example, and a Tetris game example. Use these examples to test out connectivity to a Learning Record Store or write learning content that is compatible with using the xAPI.',
-      link_ex: 'http://adlnet.github.io/experienceapi_client_examples/',
-      link_ex_title: 'Live Demo',
+      // link_ex: 'http://adlnet.github.io/experienceapi_client_examples/',
+      // link_ex_title: 'Live Demo',
       link_gh: 'https://github.com/adlnet/experienceapi_client_examples'
     },
     {
@@ -121,8 +121,8 @@ $(function() {
       icon: 'fa-youtube',
       title: 'xAPI Youtube',
       description: 'Send Youtube Video interactions to an LRS with xAPI.',
-      link_ex: 'http://adlnet.github.io/xapi-youtube',
-      link_ex_title: 'Website',
+      // link_ex: 'http://adlnet.github.io/xapi-youtube',
+      // link_ex_title: 'Website',
       link_gh: 'https://github.com/adlnet/xapi-youtube'
     },
     {
@@ -225,8 +225,8 @@ $(function() {
       icon: 'fa-file-text',
       title: 'xAPI Vocabulary',
       description: 'A vocabulary scheme for IRI persistence when using xAPI verbs and activity types.',
-      link_ex: 'http://xapi.vocab.pub/datasets/adl/',
-      link_ex_title: 'Website',
+      // link_ex: 'http://xapi.vocab.pub/datasets/adl/',
+      // link_ex_title: 'Website',
       link_gh: 'https://github.com/adlnet/xapi-vocabulary'
     },  
     {
@@ -247,6 +247,33 @@ $(function() {
       description: 'The adlnet organization on github.',
       link_gh: 'https://github.com/adlnet'
     },
+    {
+      tags: ["Documents"],
+      color: 'blue',
+      icon: 'fa-folder-open-o',
+      title: 'Standards',
+      description: 'A collection of Specifications and Standards leveraged by the systems within the DLE',
+      link_ex: 'https://adlnet.github.io/Share-Documents/Standards/',
+      link_ex_title: 'View Docs',
+    },
+    // {
+    //   tags: ["Documents"],
+    //   color: 'blue',
+    //   icon: 'fa-file-text',
+    //   title: 'Doc Name 1',
+    //   description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
+    //   link_ex: 'public/adl-tutorial-keycloak-id-providers.pdf',
+    //   link_ex_title: 'PDF',
+    // },
+    // {
+    //   tags: ["Documents"],
+    //   color: 'blue',
+    //   icon: 'fa-cogs',
+    //   title: 'Doc Name 2',
+    //   description: 'Doc 2',
+    //   link_ex: 'public/adl-tutorial-keycloak-id-providers.pdf',
+    //   link_ex_title: 'VSDX',
+    // },
   ];
 
   // Build the menu
