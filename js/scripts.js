@@ -283,6 +283,16 @@ $(function() {
       link_ex: 'https://adlnet.github.io/Share-Documents/eBook/',
       link_ex_title: 'View Docs',
     },
+
+    {
+      tags: ["Documents"],
+      color: 'blue',
+      icon: 'fa-folder-open-o',
+      title: 'ELRR',
+      description: 'All availible public documentation on the Enterprise Learner Record Repository (ELRR)',
+      link_ex: 'https://adlnet.github.io/Share-Documents/ELRR/',
+      link_ex_title: 'View Docs',
+    },
   ];
 
   // Build the menu
