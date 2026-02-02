@@ -249,22 +249,31 @@ $(function() {
     },
     {
       tags: ["Documents"],
-      color: 'grey',
-      icon: 'fa-github',
+      color: 'blue',
+      icon: 'fa-file-text',
       title: 'ADL on Published Documents',
-      description: 'The adlnet organization\'s published documents on a public repository.',
+      description: 'The adlnet organization\'s published documents',
       link_ex: 'https://drive.google.com/drive/folders/1Wpe7QUYcM7rroP3MGmhTAN79Mt9y_pxz',
       link_ex_title: 'ADL OneDrive',
     },
-    // {
-    //   tags: ["Documents"],
-    //   color: 'blue',
-    //   icon: 'fa-folder-open-o',
-    //   title: 'TLA & Standards',
-    //   description: 'A collection of Specifications and Standards leveraged by the systems within the DLE',
-    //   link_ex: 'https://adlnet.github.io/Share-Documents/TLAandStandards/',
-    //   link_ex_title: 'View Docs',
-    // },
+    {
+      tags: ["Documents"],
+      color: 'blue',
+      icon: 'fa-folder-open-o',
+      title: 'Technical Documents',
+      description: 'A collection of system architecture documents and other technical resources for the DLE',
+      link_ex: 'https://adlnet.github.io/Share-Documents/TechnicalDocuments',
+      link_ex_title: 'View Docs',
+    },
+    {
+      tags: ["Documents"],
+      color: 'blue',
+      icon: 'fa-folder-open-o',
+      title: 'LDSS Documents',
+      description: 'A collection of working documents for schemas as they would appear in the Linked Data and Schema Service (LDSS)',
+      link_ex: 'https://adlnet.github.io/Share-Documents/LDSS',
+      link_ex_title: 'View Docs',
+    },
   ];
 
   // Build the menu
