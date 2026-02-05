@@ -247,15 +247,15 @@ $(function() {
       description: 'The adlnet organization on github.',
       link_gh: 'https://github.com/adlnet'
     },
-    {
-      tags: ["Documents"],
-      color: 'blue',
-      icon: 'fa-file-text',
-      title: 'ADL on Published Documents',
-      description: 'The adlnet organization\'s published documents',
-      link_ex: 'https://drive.google.com/drive/folders/1Wpe7QUYcM7rroP3MGmhTAN79Mt9y_pxz',
-      link_ex_title: 'ADL OneDrive',
-    },
+    // {
+    //   tags: ["Documents"],
+    //   color: 'blue',
+    //   icon: 'fa-file-text',
+    //   title: 'ADL on Published Documents',
+    //   description: 'The adlnet organization\'s published documents',
+    //   link_ex: 'https://drive.google.com/drive/folders/1Wpe7QUYcM7rroP3MGmhTAN79Mt9y_pxz',
+    //   link_ex_title: 'ADL OneDrive',
+    // },
     {
       tags: ["Documents"],
       color: 'blue',
