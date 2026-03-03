@@ -1,6 +1,6 @@
 $(function() {
 
-  var groups = ["xAPI","LRS","LRSTools","APTools","Reporting","Mobile","Profile","Tutorials", "Workshops", "Catapult", "Documents"];
+  var groups = ["xAPI","LRS","LRSTools","APTools","Reporting","Mobile","Profile","Tutorials", "Workshops", "Catapult", "DLE", "ECC", "ELRR", "LDSS", "Portal"];
 
   var items = [
     
@@ -256,23 +256,207 @@ $(function() {
     //   link_ex: 'https://drive.google.com/drive/folders/1Wpe7QUYcM7rroP3MGmhTAN79Mt9y_pxz',
     //   link_ex_title: 'ADL OneDrive',
     // },
+    // {
+    //   tags: ["Documents"],
+    //   color: 'blue',
+    //   icon: 'fa-folder-open-o',
+    //   title: 'Technical Documents',
+    //   description: 'A collection of system architecture documents and other technical resources for the DLE',
+    //   link_ex: 'https://adlnet.github.io/Share-Documents/TechnicalDocuments',
+    //   link_ex_title: 'View Docs',
+    // },
+    // {
+    //   tags: ["Documents"],
+    //   color: 'blue',
+    //   icon: 'fa-folder-open-o',
+    //   title: 'LDSS Documents',
+    //   description: 'A collection of working documents for schemas as they would appear in the Linked Data and Schema Service (LDSS)',
+    //   link_ex: 'https://adlnet.github.io/Share-Documents/LDSS',
+    //   link_ex_title: 'View Docs',
+    // },
     {
-      tags: ["Documents"],
+      tags: ['DLE', 'ECC'],
       color: 'blue',
-      icon: 'fa-folder-open-o',
-      title: 'Technical Documents',
-      description: 'A collection of system architecture documents and other technical resources for the DLE',
-      link_ex: 'https://adlnet.github.io/Share-Documents/TechnicalDocuments',
-      link_ex_title: 'View Docs',
+      icon: 'fa-university',
+      title: 'ecc-openlxp-xms',
+      description: 'The Experience Management Service (XMS) is a part of the OpenLXP Enterprise Course Catalog (ECC) platform. It is the backend responsible for managing courses/catalogs. <br><br> XMS is the user interface facilitating modification and augmentation of records by learning experience owners and managers.',
+      link_gh: 'https://github.com/adlnet/ecc-openlxp-xms'
     },
     {
-      tags: ["Documents"],
+      tags: ['DLE', 'ECC'],
       color: 'blue',
-      icon: 'fa-folder-open-o',
-      title: 'LDSS Documents',
-      description: 'A collection of working documents for schemas as they would appear in the Linked Data and Schema Service (LDSS)',
-      link_ex: 'https://adlnet.github.io/Share-Documents/LDSS',
-      link_ex_title: 'View Docs',
+      icon: 'fa-university',
+      title: 'ecc-openlxp-authentication',
+      description: 'This is a Django package built on the social-auth-app-django package to allow additional authentication options for the OpenLXP project. <brt><br> Currently this package adds support for storing SAML configurations in the database used by Django, to allow for site administrators to set SAML configurations through the admin app.',
+      link_gh: 'https://github.com/adlnet/ecc-openlxp-authentication'
+    },
+    {
+      tags: ['DLE', 'ECC'],
+      color: 'blue',
+      icon: 'fa-university',
+      title: 'ecc-openlxp-xia',
+      description: 'OpenLXP XIA is a Python package that provides the validation functionality of extracted metadata from the source. In addition, it helps transform metadata into target metadata and further load it into indexing services. The OpenLXP XIA package does not include the metadata extraction process because extraction methods can be different for different sources. But once metadata gets extracted from the source, OpenLXP-XIA continues the V-T-V-L (Validate-Transform-Validate-Load) cycle.',
+      link_gh: 'https://github.com/adlnet/ecc-openlxp-xia'
+    },
+    {
+      tags: ['DLE', 'ECC'],
+      color: 'blue',
+      icon: 'fa-university',
+      title: 'ecc-openlxp-xds',
+      description: 'The Experience Discovery Service (XDS) is the administration and configuration backend to the human-facing XDS application, enabling an Experience Consumer or Experience Facilitator to quickly locate a pertinent learning experience metadata record that has been indexed by the Experience Index Service (XIS).',
+      link_gh: 'https://github.com/adlnet/ecc-openlxp-xds'
+    },
+    {
+      tags: ['DLE', 'ECC'],
+      color: 'blue',
+      icon: 'fa-university',
+      title: 'ecc-openlxp-xis',
+      description: 'The primary funnel for learning experience metadata collected by the Experience Indexing Agent (XIA) components. <br><br> XIS Component is the primary funnel for learning experience metadata collected by the XIA components. In addition, the XIS can receive supplemental learning experience metadata – field name/value overrides and augmentations – from the Experience Management Service (XMS).',
+      link_gh: 'https://github.com/adlnet/ecc-openlxp-xis'
+    },
+    {
+      tags: ['DLE', 'ECC'],
+      color: 'blue',
+      icon: 'fa-university',
+      title: 'ecc-openlxp-xse',
+      description: 'XSE works to streamline the search capabilities relied upon by Experience Discovery Service (XDS). The Experience Indexing Service (XIS) loads records into XSE (assumed to be Elasticsearch).',
+      link_gh: 'https://github.com/adlnet/ecc-openlxp-xse'
+    },
+    {
+      tags: ['DLE', 'ECC'],
+      color: 'blue',
+      icon: 'fa-university',
+      title: 'ecc-openlxp-xds-ui',
+      description: 'This is the UI for the OpenLXP: Experience Discovery Service (XDS). It allows you to create and manage your own experience collection, subscribe to other people\'s experience collections, and search for experiences indexed in the service.',
+      link_gh: 'https://github.com/adlnet/ecc-openlxp-xds-ui'
+    },
+    {
+      tags: ['DLE', 'ELRR'],
+      color: 'blue',
+      icon: 'fa-file-text',
+      title: 'elrr-documentation',
+      description: 'Technical documentation on deploying and using the open source ELRR code',
+      link_gh: 'https://github.com/adlnet/elrr-documentation'
+    },
+    {
+      tags: ['DLE', 'ELRR'],
+      color: 'blue',
+      icon: 'fa-user',
+      title: 'elrr-datasync',
+      description: 'The Datasync component of ELRR is a periodic process which polls data sources (at this time just the External Services proxy) to collect xAPI data and put it into a Kafka Topic for consumption and processing by ELRR.',
+      link_gh: 'https://github.com/adlnet/elrr-datasync'
+    },
+    {
+      tags: ['DLE', 'ELRR'],
+      color: 'blue',
+      icon: 'fa-user',
+      title: 'elrr-services',
+      description: 'This component of ELRR system houses the Learner API to allow the reading and writing of the P2997 data stored in ELRR Learner Profile.',
+      link_gh: 'https://github.com/adlnet/elrr-services'
+    },
+    {
+      tags: ['DLE', 'ELRR'],
+      color: 'blue',
+      icon: 'fa-user',
+      title: 'elrr-aggregator',
+      description: 'The ELRR Aggregator is a backend Java service within the Enterprise Learner Record Repository (ELRR) ecosystem. It has no end‑user UI and acts as the central intake, validation, and consolidation layer for learner record data flowing into ELRR.',
+      link_gh: 'https://github.com/adlnet/elrr-aggregator'
+    },
+    {
+      tags: ['DLE', 'ELRR'],
+      color: 'blue',
+      icon: 'fa-user',
+      title: 'elrr-services-entities',
+      description: 'This repository contains entity, repository, and service definitions for basic entities in ELRR Services and Aggregator. It was extracted out to support both of them using the same database properly.',
+      link_gh: 'https://github.com/adlnet/elrr-services-entities'
+    },
+    {
+      tags: ['DLE', 'ELRR'],
+      color: 'blue',
+      icon: 'fa-user',
+      title: 'elrr-external-services',
+      description: 'The External Services component of ELRR interacts with external datasources to get data for updates to ELRR Data. Currently the only implemented integration is with an LRS, so it acts as a proxy for LRS read calls. <br><br>Typically this proxy is called by Datasync which is a polling process that retrieves the data for processing by ELRR.',
+      link_gh: 'https://github.com/adlnet/elrr-external-services'
+    },
+    {
+      tags: ['DLE', 'ELRR'],
+      color: 'blue',
+      icon: 'fa-cog',
+      title: 'elrr-dockercompose',
+      description: 'A sample docker-compose file to aid in the deployment of the ELRR',
+      link_gh: 'https://github.com/adlnet/elrr-dockercompose'
+    },
+    {
+      tags: ['DLE', 'ELRR'],
+      color: 'blue',
+      icon: 'fa-user',
+      title: 'elrr-services-parent',
+      description: 'Aggregator and Services both need the same entity definitions to run. This parent project allows for the build of entities before the Aggregator and Services jars are built in CI/CD.',
+      link_gh: 'https://github.com/adlnet/elrr-services-parent'
+    },
+    {
+      tags: ['DLE', 'ELRR'],
+      color: 'blue',
+      icon: 'fa-user',
+      title: 'elrr-aggregator-parent',
+      description: 'Aggregator and Services both need the same entity definitions to run. This parent project allows for the build of entities before the Aggregator jars are built in CI/CD.',
+      link_gh: 'https://github.com/adlnet/elrr-aggregator-parent'
+    },
+    {
+      tags: ['DLE', 'LDSS'],
+      color: 'blue',
+      icon: 'fa-tags',
+      title: 'dle-ldss',
+      description: 'The DLE Linked Data and Schema Service (LDSS) is an open-source service for managing, serving, and validating linked data schemas. <br><br>This repository contains the LDSS service source code along with Kubernetes manifests for deploying it in cloud-native environments.',
+      link_gh: 'https://github.com/adlnet/DLE-LDSS'
+    },
+    {
+      tags: ['DLE', 'ECCR'],
+      color: 'blue',
+      icon: 'fa-pencil-square-o',
+      title: 'DLE-ECCR',
+      description: 'Blueprints for developing the ECCR',
+      link_gh: 'https://github.com/adlnet/DLE-ECCR'
+    },
+    {
+      tags: ['DLE', 'LRS'],
+      color: 'blue',
+      icon: 'fa-university',
+      title: 'SQL-LRS',
+      description: 'SQL LRS is distinct from other LRSs developed at Yet Analytics for being SQL-based and supporting multiple SQL database management systems (DBMSs) like SQLite and Postgres.',
+      link_gh: 'https://github.com/yetanalytics/lrsql'
+    },
+    {
+      tags: ['DLE', 'LRS'],
+      color: 'blue',
+      icon: 'fa-university',
+      title: 'LRS-Pipe',
+      description: 'LRSPipe enables the Total Learning Architecture by acting as middleware between layers of data and by governing data flow directly based on xAPI Profiles. It’s more than an xAPI statement forwarder — it’s a forwarder that is governed by xAPI Profiles.',
+      link_gh: 'https://github.com/yetanalytics/xapipe'
+    },
+    {
+      tags: ['DLE', 'Portal'],
+      color: 'blue',
+      icon: 'fa-desktop',
+      title: 'edlm-portal-ui',
+      description: 'A Next.js-based web portal for enterprise digital learning management, built with React, Tailwind CSS, and integrated with xAPI for learning analytics.',
+      link_gh: 'https://github.com/adlnet/edlm-portal-ui'
+    },
+    {
+      tags: ['DLE', 'Portal'],
+      color: 'blue',
+      icon: 'fa-desktop',
+      title: 'edlm-portal-backend',
+      description: 'The Enterprise Digital Learning Management (EDLM) Portal Backend is the consolidated backend to the human-facing Portal UI application, enabling complex data processing across multiple data sources. Because the Portal Backend is a separate application, it can be deployed in a separate environment from the connected services. ',
+      link_gh: 'https://github.com/adlnet/edlm-portal-backend'
+    },
+    {
+      tags: ['DLE', 'Portal'],
+      color: 'blue',
+      icon: 'fa-desktop',
+      title: 'edlm-portal-xia-jobs',
+      description: 'The Enterprise Course Catalog (ECC) is one of the three Enterprise Digital Learning Modernization (EDLM) lines of an effort supported by ADL.  <br><br>The goal of the ECC is a learning experience discovery service designed to aggregate metadata describing learning experiences from various internal sources as well as external sources.',
+      link_gh: 'https://github.com/adlnet/edlm-portal-xia-jobs'
     },
   ];
 
