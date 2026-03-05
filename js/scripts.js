@@ -1,6 +1,6 @@
 $(function() {
 
-  var groups = ["xAPI","LRS","LRSTools","APTools","Reporting","Mobile","Profile","Tutorials", "Workshops", "Catapult", "DLE", "ECC", "ELRR", "LDSS", "Portal"];
+  var groups = ["xAPI","LRS","LRSTools","APTools","Reporting","Mobile","Profile","Tutorials", "Workshops", "Catapult", "DLE", "ECC", "ELRR", "LDSS", "Portal", "MMT"];
 
   var items = [
     
@@ -457,6 +457,30 @@ $(function() {
       title: 'edlm-portal-xia-jobs',
       description: 'The Enterprise Course Catalog (ECC) is one of the three Enterprise Digital Learning Modernization (EDLM) lines of an effort supported by ADL.  <br><br>The goal of the ECC is a learning experience discovery service designed to aggregate metadata describing learning experiences from various internal sources as well as external sources.',
       link_gh: 'https://github.com/adlnet/edlm-portal-xia-jobs'
+    },
+    {
+      tags: ['DLE', 'MMT'],
+      color: 'blue',
+      icon: 'fa-desktop',
+      title: 'mmt-ia-ace',
+      description: 'The Modernized Military Transcript (MMT) Indexing Agent ACE follows the XIA design pattern but indexes mappings from ACE that provide suggestions on academic equivalencies to trainings and occupations.',
+      link_gh: 'https://github.com/adlnet/mmt-ia-ace'
+    },
+    {
+      tags: ['DLE', 'MMT'],
+      color: 'blue',
+      icon: 'fa-desktop',
+      title: 'mmt-backend',
+      description: 'The Modernized Military Transcript (MMT) Backend is the consolidated backend to the human-facing MMT Portal application, enabling complex data consolidation from multiple data sources and the generation and sharing of PDF transcripts.',
+      link_gh: 'https://github.com/adlnet/mmt-backend'
+    },
+    {
+      tags: ['DLE', 'MMT'],
+      color: 'blue',
+      icon: 'fa-desktop',
+      title: 'mmt-portal',
+      description: 'A modern web portal for managing Modernized Military Transcript (MMT) operations. Built with Next.js, React, and Tailwind CSS, this application provides a comprehensive solution for transcript management, academic institution administration, and user tracking.',
+      link_gh: 'https://github.com/adlnet/mmt-portal'
     },
   ];
 
