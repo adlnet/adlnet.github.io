@@ -323,6 +323,14 @@ $(function() {
     {
       tags: ["APTools","xAPI", "Profile"],
       color: 'blue',
+      icon: 'fa-file-text',
+      title: 'xAPI Authored Profiles',
+      description: 'A xAPI profiles that were hosted on the xAPI Profile server',
+      link_gh: 'https://github.com/adlnet/xapi-authored-profiles'
+    },
+    {
+      tags: ["APTools","xAPI", "Profile"],
+      color: 'blue',
       icon: 'fa-cogs',
       title: 'SCORM to xAPI Wrapper',
       description: 'APIWrapper.js file commonly used with SCORM with xAPI calls embedded.',
