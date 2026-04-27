@@ -4,6 +4,14 @@ $(function() {
 
   var items = [
     {
+      tags: ['DLE', 'xAPI', 'Reporting'],
+      color: 'blue',
+      icon: 'fa-university',
+      title: 'DoDI Refrence',
+      description: 'A list of recommendations for building learning environments',
+      link_ex: 'https://adlnet.github.io/dodireference/'
+    },
+    {
       tags: ['DLE', 'ECC'],
       color: 'blue',
       icon: 'fa-university',
