@@ -8,7 +8,7 @@ $(function() {
       color: 'blue',
       icon: 'fa-university',
       title: 'DoDI Refrence',
-      description: 'A list of recommendations for building learning environments',
+      description: 'This is the combination of the DoDI 1322.26 "Distributed Learning" References that allow for policy to update the requirements and best practices without having to move through the slow channels of a full policy review.  The version of this reference is the culmination of the efforts of the Advanced Distributed Learning (ADL) Initiative, the authority referenced in the DoDI, and focuses on adoption of data standards to enable data interoperability across the Department of War and Whole of Government.s',
       link_ex: 'https://adlnet.github.io/dodireference/'
     },
     {
